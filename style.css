@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #F3EEEA;
+    --tertiary-color: #1A1A1A; 
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.bunny.net/css?family=playfair-display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+html, body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--primary-color);
+    min-height: 100vh;
+}
+
+.name {
+    margin-top: 4rem;
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--tertiary-color);
+}
+
+.job {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--tertiary-color);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--tertiary-color);
+    text-align: left;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 6em;
+    width: 60vw;
+    text-align: center;
+}
+
+div.columns {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+div.column {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid var(--tertiary-color);
+    margin-right: 0.5em;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
