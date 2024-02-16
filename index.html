@@ -2,74 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Maurice Daniel V. Hiponia">
     <title>Maurice Daniel Hiponia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=playfair-display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.bunny.net/css?family=barlow-condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <section>
-            <p class="name">Maurice Daniel Hiponia</p>
-            <p class="job">Junior Web Developer</p>
-        </section>
-
-        <section>
-            <div>
-                <img src="./profile.png" width="100" height="100">
-                <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat sit amet libero vitae facilisis. Integer ullamcorper, nisl ac vulputate suscipit, elit justo gravida odio, eu venenatis metus justo sed sem. Morbi auctor odio a quam luctus, nec convallis dolor dictum. Proin eget felis ligula. Vivamus et nunc nec felis fermentum convallis. Fusce non tortor ultrices, fermentum ligula ac, mattis tortor. Curabitur sodales volutpat eros, ac fringilla libero cursus id. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut eu dolor quam.</p>
+    <header>
+        <h1 class="name">Maurice Daniel Hiponia</h1>
+        <h3 class="job">Junior Web Developer</h3>
+    </header>
+    <img class="profile" src="./profile.jpg" width="125" height="125">
+    <section>
+        <div>
+            <h1>About Me</h1>
+            <p class="about">I am an IT graduate with a deep passion for programming. I enjoy crafting clean and simple websites and take delight in solving algorithmic challenges. Exploring different technologies in the field is not just a hobby for me but a journey of continuous learning. I am excited about the possibilities that coding offers and am eager to contribute meaningfully to the world of software development.</p>
+            <p>Download:<span class="download"><a href="#">Resume</a><a href="#">CV</a></span></p>
+        </div>
+    </section>
+    <section>
+        <h1>Skills</h1>
+        <div class="columns">
+            <div class="column">
+                <h3>Front End</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
             </div>
-        </section>
-        
-        <section>
-            <h1>Skills</h1>
-            <div class="columns">
-                <div class="column">
-                    <h2>Front End</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h2>Back End</h2>
-                    <ul>
-                        <li>PHP</li>
-                        <li>Node.js</li>
-                    </ul>
-                </div>
-                <div class="column"> 
-                    <h2>Database</h2>
-                    <ul>
-                        <li>MySQL<li>
-                        <li>MongoDB<li>
-                    </ul>
-                </div>
-                <div class="column"> 
-                    <h2>Tools</h2>
-                    <ul>
-                        <li>Git</li>
-                        <li>Github</li>
-                        <li>Docker</li>
-                    </ul>
-                </div>
-                <div class="column">
-                    <h2>Frameworks</h2>
-                    <ul>
-                        <li>Laravel</li>
-                        <li>React</li>
-                        <li>Express</li>
-                    </ul>
-                </div>
-
+            <div class="column">
+                <h3>Back End</h3>
+                <ul>
+                    <li>PHP</li>
+                    <li>Node.js</li>
+                </ul>
             </div>
-        </section>
-    </main>
-
+            <div class="column">
+                <h3>Database</h3>
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>Github</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Frameworks</h3>
+                <ul>
+                    <li>Laravel</li>
+                    <li>React</li>
+                    <li>Express</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Projects</h1>
+        <div class="project-container">
+            <h3 class="project-title">Oscanner</h3>
+            <h4>Level: Capstone</h4>
+            <div class="project-screenshot">
+                <img src="./Images/image1.png"> 
+            </div>
+            <p class="project-description">
+                Oscanner is a QR Code Attendance System with Data Visualization. It provides a comprehensive solution for managing attendance using QR codes and offers intuitive data visualization features.
+            </p>
+            <p class="project-info">
+                   Implemented Google Auth & Recaptcha V3 for security, Mailtrap & Google SMTP for email testing, and designed UI with TailwindCSS. Utilized Endroid QR Code for QR generation and D3.js for data visualization. Developed backend functionalities with Laravel & Laravel Breeze, incorporated Flatpickr for date & time selection, and extended QR capabilities with Html5 QR Code. Enhanced data management with PHPSpreadSheet & DomPdf, and improved user experience with integrated TUI Calendar & Nominatim for scheduling and address autocomplete.
+            </p>
+            <p class="project-stack">Tech Stack: PHP, Laravel, D3.js, Laravel Breeze, HTML, CSS, JS, TailwindCSS, Google Auth, Recaptcha V3, Endroid QR Code, Flatpickr, Html5 QR Code, PHPSpreadSheet, DomPdf, TUI Calendar, Nominatim</p>
+            <p class="project-repository">REPOSITORY:<span> PRIVATE</span> DEMO:<span> NOT AVAILABLE</span></p>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
-
