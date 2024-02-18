@@ -171,15 +171,25 @@ a {
 
 .project-repository span{
     margin-right: 1em; 
-    font-weight:700;
+    font-weigh:700;
 }
 
 .button-prev{
     margin-right: 1em;
-    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius:0;
+    background-color:white;
+    padding: 4px;
 }
 
 .button-next{
     margin-left: 1em;
-    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius:0;
+    background-color:white;
+    padding: 4px;
+}
+
+.button-prev:hover, .button-next:hover{
+    background-color: grey;
 }
