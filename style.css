@@ -60,6 +60,7 @@ a {
 
 .profile {
     border-radius: 50%;
+    border: 2px solid black;
 }
 
 .download {
@@ -87,6 +88,10 @@ a {
 }
 
 .project-screenshot{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
     text-align: center;  
     width: 60vw;
     height: 300px;
@@ -99,6 +104,8 @@ a {
 
     width: auto;
     height: auto;
+
+    border: 2px solid black;
 }
 
 header {
@@ -167,4 +174,12 @@ a {
     font-weight:700;
 }
 
+.button-prev{
+    margin-right: 1em;
+    padding: 0.5rem;
+}
 
+.button-next{
+    margin-left: 1em;
+    padding: 0.5rem;
+}
