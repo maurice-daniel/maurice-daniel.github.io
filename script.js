@@ -9,17 +9,35 @@ for (let j = 1; j <= 5; j++) {
     img.src = `./Images/image${j}.png`;
     images.push(img);
 }
-btn_next.addEventListener("click", function(e) {
+btn_next.addEventListener("click", function (e) {
     if (i < 5) {
         i++;
         screenshot.src = images[i - 1].src;
     }
 });
 
-btn_prev.addEventListener("click", function(e) {
+btn_prev.addEventListener("click", function (e) {
     if (i > 1) {
         i--;
         screenshot.src = images[i - 1].src;
     }
 });
 
+let btn_collapse = document.querySelector(".button-collapse");
+let info = document.querySelector(".project-info");
+let stack = document.querySelector(".project-stack");
+let display_status = info.style.display;
+
+btn_collapse.addEventListener("click", function (e) {
+    if (display_status !== "block") {
+        info.style.display = "block";
+        stack.style.display = "block";
+        btn_collapse.innerHTML = "Hide";
+        display_status = info.style.display;
+    } else {
+        info.style.display = "none";
+        stack.style.display = "none";
+        btn_collapse.innerHTML = "Show";
+        display_status = info.style.display;
+    }
+});
