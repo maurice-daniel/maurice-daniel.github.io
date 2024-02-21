@@ -35,8 +35,10 @@ header {
 
 .columns {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 3.5em;
+    text-align: center;
 }
 
 .skills {
@@ -84,13 +86,13 @@ a {
     justify-content: center;
     text-align: center;
     width: 60vw;
-    height: 250px;
+    height: auto;
+    margin-top: 1rem;
 }
 
 .project-screenshot img {
     max-width: 100%;
     max-height: 100%;
-
     border: 1px solid black;
 }
 
@@ -114,10 +116,11 @@ a {
     border: 1px solid black;
     border-radius: 0;
     background-color: white;
-    margin-left: 1em;
-    margin-right: 1em;
-    padding-right: 4px;
-    padding-left: 4px;
+    padding: 2px 10px 2px;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 8%;
 }
 
 .button-prev:hover,
@@ -131,9 +134,10 @@ a {
     padding-right: 4px;
     padding-left: 4px;
     border: 1px solid black;
-    border-radius: 0;
+    border-radius: 8%;
     background-color: white;
     margin-top: 1em;
+    padding: 2px 10px 2px;
 }
 
 .project-info,
@@ -145,3 +149,16 @@ a {
     margin-top: 0.5em;
 }
 
+.column ul>li{
+    display:inline;
+}
+
+.navigation-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download{
+    margin-top:0.5rem;
+}

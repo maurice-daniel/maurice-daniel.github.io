@@ -9,17 +9,26 @@ for (let j = 1; j <= 5; j++) {
     img.src = `./Images/image${j}.png`;
     images.push(img);
 }
+
 btn_next.addEventListener("click", function (e) {
     if (i < 5) {
         i++;
-        screenshot.src = images[i - 1].src;
+        screenshot.classList.remove("fadeIn"); 
+        setTimeout(() => {
+            screenshot.src = images[i - 1].src;
+            screenshot.classList.add("fadeIn"); 
+        }, 50); 
     }
 });
 
 btn_prev.addEventListener("click", function (e) {
     if (i > 1) {
         i--;
-        screenshot.src = images[i - 1].src;
+        screenshot.classList.remove("fadeIn"); 
+        setTimeout(() => {
+            screenshot.src = images[i - 1].src;
+            screenshot.classList.add("fadeIn"); 
+        }, 50); 
     }
 });
 
