@@ -1,0 +1,74 @@
+@media (max-width: 534px)
+{
+    .container{
+        width: 80dvw;
+    }
+    .columns{
+        flex-direction: column;
+        gap:1rem;
+    }
+
+
+    #name h1{
+        font-size: 1.3rem;
+    }
+
+    #name h2{
+        font-size: 1.1rem;
+    }
+    
+    .profile{
+        height: 120px;
+        width: auto;
+    }
+
+    section,
+    footer{
+        margin-top: 2rem;
+    }
+
+    h2{
+        font-size: 1.1rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+    
+    p{
+        font-size: 1rem;
+    }
+    nav ul{
+        margin-top: 0.5rem;
+        display:none;
+        flex-direction: column;
+        text-align:end;
+        gap: 0.7rem;
+    } 
+    
+    #burger{
+     display:block;
+     font-weight:bold;
+    }
+    
+}
+
+
+
+@media (min-width: 535px) and (max-width: 700px)
+{
+    nav ul{
+        margin-top: 0.5rem;
+        display:none;
+        flex-direction: column;
+        text-align:end;
+        gap: 0.7rem;
+    } 
+    
+    #burger{
+     display:block;
+     font-weight:bold;
+     font-size:1.5rem;
+    }
+ 
+}
