@@ -26,7 +26,12 @@ body {
 }
 
 .container {
+  background:white;
   width: 60vw;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-right:1px solid black;
+  border-left:1px solid black;
 }
 
 section,
