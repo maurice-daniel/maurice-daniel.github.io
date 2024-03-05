@@ -31,5 +31,5 @@ function autoSlideShow() {
 
 image.src = firstImage.src;
 image.style.opacity = 1;
-setInterval(autoSlideShow, 2300);
+setInterval(autoSlideShow,3000);
 

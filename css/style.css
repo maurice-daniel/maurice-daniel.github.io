@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Barlow", sans-serif;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   min-height: 100vh;
@@ -30,20 +30,19 @@ body {
   width: 60vw;
   padding-left: 2rem;
   padding-right: 2rem;
-  border-right:1px solid black;
-  border-left:1px solid black;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-left:1px solid rgb(163 163 163);
+  border-right:1px solid rgb(163 163 163);
 }
 
-section,
-footer {
-  margin-top: 4rem;
-}
-
-section {
-  text-align: justify;
+section{
+    margin-top: 4rem;
+    text-align: justify;
 }
 
 footer {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
   text-align: end;
 }
 
@@ -78,16 +77,15 @@ p {
 
 nav {
   padding: 1rem;
-  border-bottom: 1px solid var(--secondary-color);
 }
 
 nav > ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 3rem;
+  gap: 1.5rem;
   list-style: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .column > ul {
@@ -113,8 +111,9 @@ nav > ul {
 }
 
 #profile img {
-  border-radius: 50%;
-  border: 1px solid var(--secondary-color);
+  border-radius:5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border:1px solid rgb(82 82 82); 
 }
 
 h2,
@@ -142,7 +141,8 @@ h2 {
   max-width: 100%;
   height: auto;
   margin: 0.5rem 0;
-  border: 1px solid var(--secondary-color);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border:1px solid rgb(163 163 163);
 }
 
 .project-stack {
@@ -164,4 +164,54 @@ h2 {
 
 #burger{
     display:none;
+}
+
+#burger:hover{
+    color:orange;
+}
+
+.social{
+    margin-top: 0.6rem;
+}
+.social>a{
+    padding-right:0.5rem;
+}
+
+.form-container{
+    margin-top: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+form{
+    border: 1px solid black;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border:1px solid rgb(163 163 163);
+    
+}
+
+form h2{
+    text-align:center;
+}
+
+form span{
+    margin-top: 0.5rem;
+    display:block;
+}
+
+form input,area{
+    padding: 0.3rem;
+    width: 100%;
+    border:1px solid rgb(163 163 163);
+}
+
+form input[type=submit]{
+    margin-top:1rem;
+}
+
+input:focus, textarea:focus, select:focus{
+   outline: none;
 }
