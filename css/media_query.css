@@ -1,7 +1,7 @@
 @media (max-width: 534px)
 {
     .container{
-        width: 80dvw;
+        width: 90dvw;
     }
     .columns{
         flex-direction: column;
@@ -50,7 +50,11 @@
      display:block;
      font-weight:bold;
     }
-    
+
+   form{
+       border:none;
+       box-shadow:none;
+   } 
 }
 
 
