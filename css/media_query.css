@@ -51,13 +51,7 @@
      font-weight:bold;
     }
 
-   form{
-       border:none;
-       box-shadow:none;
-   } 
 }
-
-
 
 @media (min-width: 535px) and (max-width: 800px)
 {
