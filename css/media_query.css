@@ -1,7 +1,7 @@
 @media (max-width: 534px)
 {
     .container{
-        width: 90dvw;
+        width:95dvw;
     }
     .columns{
         flex-direction: column;
@@ -49,12 +49,30 @@
     #burger{
      display:block;
      font-weight:bold;
+     font-size: 1.5rem;
     }
 
+    .form-container{
+        width:100%;
+    }
+
+    form{
+        border:none;
+        box-shadow:none;
+        padding:0;
+    }
+    
+    form input,textarea{
+        width:100%;
+    }
 }
 
-@media (min-width: 535px) and (max-width: 800px)
+@media (min-width: 535px) and (max-width: 1000px)
 {
+    .container{
+        width: 70dvw;
+    }
+
     nav ul{
         margin-top: 0.5rem;
         display:none;
@@ -66,7 +84,10 @@
     #burger{
      display:block;
      font-weight:bold;
-     font-size:1.5rem;
+     font-size:1.8rem;
     }
- 
+
+    .form-container{
+        width:100%;
+    }
 }
